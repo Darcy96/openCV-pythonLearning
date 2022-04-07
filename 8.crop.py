@@ -17,7 +17,7 @@ cv2.waitKey(0)
 
 cropped = image[170:280, 250:380]#[y1:y2, x1:x2] coordenadas a recortar
 ##en la carpeta imagenes hay una breve explicacion de como estan las coordenadas organizadas
-#y como se "recorta"
+#y como se "recorta" la imagen se llama cropCoordenadas.jpg
 
 cv2.imshow("Phyton Face", cropped)
 cv2.waitKey(0)
