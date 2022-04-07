@@ -1,3 +1,5 @@
+# Descripción
+Este repositorio es creado con el fin de guardar y documentar mi aprendizaje en python y openCV.
 # openCV-pythonLearning
 Luego de haber descargado el repositorio...
 1. Debe crear un ambiente virtual usando el comando ``python -m venv nombreCarpeta``  como recomendación ponerle al nombre de la carpeta ``env``
