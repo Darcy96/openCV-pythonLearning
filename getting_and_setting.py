@@ -9,8 +9,9 @@ ap.add_argument("-i", "--image", required=True, help="Path to the image")
 args = vars(ap.parse_args())
 # entonces despues del código anterior debemos ejecutar este archivo pasando
 # argumentos definidos anteriormente
-
+#escriba esto al finalizar el ejercicio -> python getting_and_setting.py -i ./imagenes/pythonYellow.jpg
 image = cv2.imread(args["image"])
+
 #cv2.imshow("Original", image)
 # cv2.waitKey(0)
 
