@@ -2,14 +2,14 @@ from __future__ import print_function
 import argparse
 import cv2
 
-# libreria definir argumentos externos de ejecución //ejm:python load_display_save.py -i ./python.jpg
+# libreria definir argumentos externos de ejecución 
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True, help="Path to the image")
 # se almacena en un diccinario todos los parametros de entrada que el
 args = vars(ap.parse_args())
 #entonces despues del código anterior debemos ejecutar este archivo pasando 
 #argumentos definidos anteriormente
-#escriba esto al finalizar el ejercicio -> python load_display_save.py -i ./imagenes/pythonYellow.jpg
+#escriba esto al finalizar el ejercicio -> python 1.load_display_save.py -i ./imagenes/pythonYellow.jpg
 
 image = cv2.imread(args["image"])
 print("width: {} pixels".format(image.shape[1]))#console width: 1920 pixels
