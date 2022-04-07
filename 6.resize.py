@@ -36,10 +36,20 @@ cv2.imshow("Resized (Width)", resized)
 cv2.waitKey(0)
 
 
-#AHORA CAMBIAREMOS EL TAMAÑO DE LA IMAGEN PERO USANDO ESTA VEZ EL ANCHO
-r= 50.0/image.shape[0] 
+#AHORA CAMBIAREMOS EL TAMAÑO DE LA IMAGEN PERO USANDO ESTA VEZ LA ALTURA
+r= 50.0/image.shape[0] ##aqui usamos la posición 0 recordando que la altura se ubica en esta posición
 dim = (int(image.shape[1]*r), 50)
 
 resized = cv2.resize(image, dim, interpolation=cv2.INTER_AREA)
 cv2.imshow("Resized (Heigth)", resized)
+cv2.waitKey(0)
+
+##Creamos una función en imutils.py llamada resize para reutilizarla
+
+resized = imutils.resize(image, width=100)
+cv2.imshow("Resized resized via function(Width)", resized)
+cv2.waitKey(0)
+
+resized = imutils.resize(image, height=50)
+cv2.imshow("Resized resized via function (Height)", resized)
 cv2.waitKey(0)
